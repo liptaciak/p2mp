@@ -1,0 +1,10 @@
+^C:\USERS\MATEU\DOCUMENTS\P2MP\BUILD\CMAKEFILES\EE7FB591851BEE9B991966E77DA6CDF9\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mateu/Documents/p2mp/build -BC:/Users/mateu/Documents/p2mp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/mateu/Documents/p2mp/build/P2MP.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
